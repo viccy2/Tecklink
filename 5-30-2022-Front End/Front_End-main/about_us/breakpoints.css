@@ -1,0 +1,29 @@
+@media screen and (max-width:600px){
+    .aboutUs_container,
+    .consultingCard_section,
+    .teamGrid{
+        display: flex;
+        flex-direction: column;
+    }
+    .consulting_section{
+        height: fit-content;
+    }
+    .consultingCard{
+        margin: 1rem 0;
+    }
+}
+@media screen and (max-width:1000px){
+    .teamGrid{
+        grid-template-columns: 1fr 1fr;
+        display: grid;
+    }
+    .aboutUs_container{
+    display: block;
+    }
+    .teamCard{
+        padding: 0;
+    }
+    .consultingCard{
+        padding: 0;
+    }
+}

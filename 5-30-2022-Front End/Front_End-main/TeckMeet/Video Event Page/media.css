@@ -1,0 +1,113 @@
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (-o-min-device-pixel-ratio: 3/2),
+only screen and (min--moz-device-pixel-ratio: 1.5),
+only screen and (min-device-pixel-ratio: 1.5){
+    html,
+    body{
+        width: 100%;
+        overflow-x: hidden;
+    }
+}
+
+@media screen and (max-width: 600px){
+    #mainArea-grid {
+        display: flex;
+        flex-direction: column;
+    }
+    .mainArea-grid-left,
+    .mainArea-grid-right{
+        width: 100%;
+    }
+    .eventToggler {
+        gap: 0;
+    }
+    .join_details{
+        flex-direction: column;
+    }
+    .join_details button{
+        margin-top: 20px;
+    }
+    .meetingButtons button{
+        height: inherit;
+        width: 180px;
+        margin: 35px 0;
+    }
+    #upcoming_events{
+        display: flex;
+        flex-direction: column;
+    }
+    .userMenu .menu_layout{
+        display: none;
+    }
+    .userMenu.drop .menu_layout{
+        display: block;
+    }
+    .host-info{
+        flex-direction: column;
+        margin-top: 3rem;
+    }
+}
+@media screen and (max-width: 900px){
+    #mainArea-grid {
+        display: flex;
+        flex-direction: column;
+    }
+    .mainArea-grid-left,
+    .mainArea-grid-right{
+        width: 100%;
+    }
+    .eventToggler {
+        gap: 0;
+    }
+    
+    .join_details button{
+        margin-top: 20px;
+    }
+    .meetingButtons{
+        justify-content: space-evenly;
+    }
+    .meetingButtons button{
+        height: inherit;
+        width: 180px;
+        margin: 35px 0;
+    }
+    #upcoming_events{
+        display: flex;
+        flex-direction: column;
+    }
+    #secondArea-grid .meetingButtons{
+        justify-content: space-around;
+    }
+    .previous_meeting h2::after {
+        width: 50%;
+        left: 25%;
+    }
+    .previous_meeting{
+        align-items: center;
+        margin: 5rem 0;
+    }
+    .details-main{
+        width: 60%;
+    }
+    .userMenu .menu_layout{
+        display: none;
+    }
+    .userMenu.drop .menu_layout{
+        display: block;
+    }
+    #host_area{
+        flex-direction: column;
+    }
+    #host_area .mainArea-grid-left{
+        width: 100%;
+        margin-bottom: 4rem;
+    }
+    .call-menu {
+        height: 60px;
+        font-size: 20px;
+    }
+    .call-menu i {
+        padding: 10px;
+    }
+    
+}

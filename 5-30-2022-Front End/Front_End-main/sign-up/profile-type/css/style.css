@@ -1,0 +1,333 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    height: 100vh;
+    font-size: 1.8rem;
+    background-image: url("../images/background/Background.svg");
+    background-size: 200rem;
+    background-position: 100% 104%;
+    font-family: 'Lato', sans-serif;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    background-color: aquamarine;
+}
+
+.navigation {
+    display: flex;
+    justify-content: center;
+    background-color: #2B89EA;
+}
+
+.menu {
+    display: flex;
+    height: 12rem;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    background-color: #2B89EA;
+}
+
+.menu-content {
+    display: flex;
+    color: white;
+    font-size: 1.3rem;
+    gap: 6rem;
+}
+
+.sub-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.sub-menu img {
+    height: 4.5rem;
+}
+
+.search-bar {
+    margin: 2rem auto;
+    position: relative;
+}
+
+.search-bar input {
+    display: flex;
+    width: 70rem;
+    height: 6rem;
+    border: none;
+    border-radius: 2.6rem;
+    background-image: url("../images/header/magnifier-inside.svg");
+    background-size: 2.7rem;
+    padding: 0 0 0 5rem;
+    background-repeat: no-repeat;
+    background-position: 1rem;
+    box-shadow: 0 0 0 1 rem #2B89EA;
+}
+
+.search-bar__button {
+    position: absolute;
+    right: .6rem;
+    top: .6rem;
+    border: none;
+    background: none;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-card {
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+    width: 63%;
+    max-width: 1200px;
+    height: auto;
+    box-shadow: 0 0 20rem -5rem #2B89EA;
+    border-radius: 2rem;
+    background-color: white;
+}
+
+.main-logo {
+    margin: 2rem auto;
+}
+
+.main-welcome {
+    display: flex;
+    justify-content: center;
+    font-size: 3rem;
+    margin-bottom: 9rem;
+}
+
+.profiles {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+.profiles img {
+    height: 15rem;
+}
+
+.profiles h3 {
+    font-size: 4.2rem;
+    font-weight: lighter;
+    margin-bottom: 1.8rem;
+    font-weight: 500;
+}
+
+.profiles h4 {
+    font-size: 3.2rem;
+    font-weight: lighter;
+    margin-bottom: 2rem;
+    font-weight: 400;
+}
+
+.not-you {
+    margin: 3rem auto;
+    font-weight: 400;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.main-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin: 3rem auto;
+    width: 63%;
+}
+
+.create-new-profile {
+    display: flex;
+    margin-top: 3rem;
+    flex-direction: column;
+}
+
+.create-new-profile p {
+    margin-bottom: 1rem;
+    font-size: 3.5rem;
+    font-weight: 200;
+    color: #777777;
+    letter-spacing: .2rem;
+}
+
+.create-new-profile input {
+    width: 45rem;
+    height: 4rem;
+    border: 1px solid #2B89EA;
+    border-radius: .5rem;
+}
+
+.sign-up {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.sign-up button {
+    width: 12rem;
+    height: 4rem;
+    font-size: 2rem;
+    color: white;
+    background-color: #CACACA;
+    border: none;
+    border-radius: .7rem;
+    letter-spacing: .2rem;
+}
+
+footer {
+    font-family: 'DM Sans', sans-serif;
+}
+
+.top {
+    display: flex;
+    margin: 10rem auto;
+    width: 63%;
+    justify-content: space-between;
+}
+
+.logo-name {
+    display: flex;
+    margin-bottom: 1rem;
+}
+
+.logo-name p {
+    margin: auto 1rem;
+}
+
+.mission-text {
+    width: 35rem;
+}
+
+li {
+    list-style-type: none;
+}
+
+.follow-us li {
+    text-align: center;
+}
+
+.about-format {
+    line-height: 5.3rem;
+}
+
+.footer-bottom {
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    width: 63%;
+    height: 10rem;
+    align-items: center;
+    line-height: 2.2rem;
+}
+
+.footer-bottom p {}
+
+.subscribe p {
+    color: #2B89EA;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.subscribe input {
+    border-color: #2B89EA;
+    border: 1px solid #2B89EA;
+    border-radius: .7rem;
+    height: 3rem;
+    width: 30rem;
+}
+
+.custom-input {}
+
+.case {
+    position: relative;
+    height: 3rem;
+    width: 30rem;
+}
+
+.shape {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2B89EA;
+    text-align: center;
+    color: white;
+    font-size: small;
+    border-radius: 0 .7rem .7rem 0;
+    height: 3rem;
+    width: 3.8rem;
+    right: 0;
+    top: 0;
+}
+
+.shape span {
+    display: flex;
+}
+
+.terms {
+    font-size: 1.3rem;
+}
+
+.terms p {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.gray {
+    color: #CACACA;
+}
+
+.barcode {
+    white-space: pre;
+}
+
+.profiles p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 11rem;
+    width: 25rem;
+    background-color: #2B89EA;
+    border-radius: 1rem;
+    font-size: 2rem;
+    color: white;
+}
+
+.progress-bar {
+    margin: 4rem auto;
+}
+
+.job-seeker-profile p {
+    background-color: white;
+    color: #2B89EA;
+    border: 2px solid #2B89EA;
+}
+
+.progress-bar img {
+    width: 30rem;
+    margin-left: auto;
+    margin-right: auto;
+}

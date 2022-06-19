@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Meta Description Tag -->
+    <meta name=“description” content=“TeckLink is an employment and business service available on web and mobile.
+        TeckLink can be used for career advancement, business, employment and more with the assistance of AI.”>
+    <!-- Meta Author -->
+    <meta name=“author” content=“TeckLink LLC”>
+    <!-- Title -->
+    <title>TeckLink | Video Player</title>
+    <!-- =========================================================== -->
+    <!-- =========================================================== -->
+    <!-- RESET CSS -->
+    <link rel="stylesheet" href="../../assets/reset_style.css">
+    <!-- STYLE CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="breakpoints.css">
+    <!-- BOOTSTRAP CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- BOOTSTRAP ICONS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="../../components/footer/footer.js"></script>
+    <!-- =========================================================== -->
+    <!-- =========================================================== -->
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar container-fluid">
+        <div class="container-sm nav_container">
+            <a href="../../index.html">
+                <img src="../../assets/img/TeckLink-Header-Logo.png" alt="TeckLink">
+            </a>
+            <div class="toggler">
+                <i class="bi bi-list"></i>
+            </div>
+            <!-- Side Nav -->
+            <div class="side_nav">
+                <ul>
+                    <li><a href="#">Workshop</a></li>
+                    <li><a href="#">TeckMeet</a></li>
+                    <li><a href="#">Jobs</a></li>
+                    <li><a href="#">TeckConnect</a></li>
+                    <li><a href="#">VoiceCast</a></li>
+                    <li><a href="#">Messenger</a></li>
+                    <button class="btn"><a href="../../sign-up/index.html"><span>Sign In</span></a>
+                        <style>
+                            .button_container {
+                                position: relative;
+                                left: 0;
+                                right: 0;
+                                top: 30%;
+                            }
+
+                            .btn {
+                                border: none;
+                                display: flex;
+                                text-align: center;
+                                cursor: pointer;
+                                text-transform: uppercase;
+                                outline: none;
+                                overflow: hidden;
+                                position: relative;
+                                color: #fff;
+                                font-weight: 700;
+                                font-size: 15px;
+                                background-color: rgb(0, 53, 123);
+                                padding: 5px 25px;
+                                margin-top: 10px;
+                                box-shadow: 0 2px 2px rgba(0, 0, 0, 0.20);
+                            }
+
+                            .btn a {
+                                color: #fff;
+                                text-decoration: none;
+
+                            }
+
+                            .btn span {
+                                position: relative;
+                                z-index: 1;
+                            }
+
+                            .btn:after {
+                                content: "";
+                                position: absolute;
+                                left: 0;
+                                top: 0;
+                                height: 490%;
+                                width: 140%;
+                                background: #2d9feb;
+                                -webkit-transition: all .5s ease-in-out;
+                                transition: all .5s ease-in-out;
+                                -webkit-transform: translateX(-98%) translateY(-25%) rotate(45deg);
+                                transform: translateX(-98%) translateY(-25%) rotate(45deg);
+                            }
+
+                            .btn:hover:after {
+                                -webkit-transform: translateX(-9%) translateY(-25%) rotate(45deg);
+                                transform: translateX(-9%) translateY(-25%) rotate(45deg);
+                            }
+
+                            .link {
+                                font-size: 20px;
+                                margin-top: 30px;
+                            }
+
+                            .link a {
+                                color: #000;
+                                font-size: 25px;
+                            }
+                        </style>
+                    </button>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Search Bar -->
+    <div class="searchBar container-fluid">
+        <div class="searchBar_container container-sm">
+            <form id='searchBar' action="" method="get">
+                <input id='search_input' type="text" placeholder="Click to search for jobs, networks and much more">
+                <input id='search_button' type="submit">
+            </form>
+        </div>
+    </div>
+    <!-- Invite Section -->
+    <div class="invite-section container-fluid">
+        <div class="invite-container container-sm">
+            <ul class="invite-list">
+                <li>Invite by TeckLink ID</li>
+                <li>Invite by Email</li>
+                <li>Invite by Contacts</li>
+                <li>Invite by Phone</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Video Section -->
+    <div class="video-section container-fluid">
+        <div class="video-container container-sm">
+            <div class="video-box">
+                <img id='video_box' src="../../assets/img/Don.png" alt="">
+                <div class="button_box">
+                    <ul>
+                        <li><i class="bi bi-record-circle"></i></li>
+                        <li><i class="bi bi-camera-reels"></i></li>
+                        <li><i class="bi bi-mic"></i></li>
+                        <li><i class="bi bi-arrow-up-square"></i></li>
+                        <li><i class="bi bi-telephone-fill"></i></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Info Section -->
+    <div class="info-section container-fluid">
+        <div class="info-container container-sm">
+            <div class="info-box">
+                <h3>Interactive Box</h3>
+                <div class="info-box_info">
+                    <h5 class="info-box_info_title">Questions</h5>
+                    <ol>
+                        <li>What should I do to improve my interviewing skills?</li>
+                        <li>Where can I get more information on the company you work for</li>
+                        <li>Who can I contact about the specific event?</li>
+                    </ol>
+                </div>
+                <div class="info-box_info">
+                    <h5 class="info-box_info_title">Speaking Order</h5>
+                    <ol>
+                        <li>Jane Smith</li>
+                        <li>Esteban Cambiasso</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer-component></footer-component>
+    <script src="script.js"></script>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

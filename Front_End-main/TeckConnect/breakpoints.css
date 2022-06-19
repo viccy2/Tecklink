@@ -1,0 +1,13 @@
+@media screen and (max-width: 958px) {
+  .main_grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    column-gap: 20px;
+  }
+
+  .friendsSection {
+    width: 100%;
+    grid-column-start: 3;
+    grid-column-end: 7;
+  }
+}

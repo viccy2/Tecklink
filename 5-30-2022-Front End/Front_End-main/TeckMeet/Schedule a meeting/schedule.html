@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Meta Description Tag -->
+    <meta name=“description” content=“TeckLink is an employment and business service available on web and mobile.
+        TeckLink can be used for career advancement, business, employment and more with the assistance of AI.”>
+    <!-- Meta Author -->
+    <meta name=“author” content=“TeckLink LLC”>
+    <!-- Title -->
+    <title>TeckLink | Schedule a Meeting</title>
+    <!-- =========================================================== -->
+    <!-- =========================================================== -->
+    <!-- RESET CSS -->
+    <link rel="stylesheet" href="../../assets/reset_style.css">
+    <!-- STYLE CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="breakpoints.css">
+    <!-- BOOTSTRAP CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- BOOTSTRAP ICONS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="../../components/footer/footer.js"></script>
+
+    <!-- =========================================================== -->
+    <!-- =========================================================== -->
+</head>
+<body>
+      <!-- Navbar -->
+      <nav class="navbar container-fluid">
+        <div class="container-sm nav_container">
+            <a href="../../index.html">
+                <img src="../../assets/img/TeckLink-Header-Logo.png" alt="TeckLink">
+            </a>
+            <div class="toggler">
+                <i class="bi bi-list"></i>
+            </div>
+            <!-- Side Nav -->
+            <div class="side_nav">
+                <ul>
+                    <li><a href="#">Workshop</a></li>
+                    <li><a href="#">TeckMeet</a></li>
+                    <li><a href="#">Jobs</a></li>
+                    <li><a href="#">TeckConnect</a></li>
+                    <li><a href="#">VoiceCast</a></li>
+                    <li><a href="#">Messenger</a></li>
+                    <button class="btn"><a href="../../sign-up/index.html"><span>Sign In</span></a>
+                        <style>
+                            .button_container {
+                                position: relative;
+                                left: 0;
+                                right: 0;
+                                top: 30%;
+                            }
+
+                            .btn {
+                                border: none;
+                                display: flex;
+                                text-align: center;
+                                cursor: pointer;
+                                text-transform: uppercase;
+                                outline: none;
+                                overflow: hidden;
+                                position: relative;
+                                color: #fff;
+                                font-weight: 700;
+                                font-size: 15px;
+                                background-color: rgb(0, 53, 123);
+                                padding: 5px 25px;
+                                margin-top: 10px;
+                                box-shadow: 0 2px 2px rgba(0, 0, 0, 0.20);
+                            }
+
+                            .btn a {
+                                color: #fff;
+                                text-decoration: none;
+
+                            }
+
+                            .btn span {
+                                position: relative;
+                                z-index: 1;
+                            }
+
+                            .btn:after {
+                                content: "";
+                                position: absolute;
+                                left: 0;
+                                top: 0;
+                                height: 490%;
+                                width: 140%;
+                                background: #2d9feb;
+                                -webkit-transition: all .5s ease-in-out;
+                                transition: all .5s ease-in-out;
+                                -webkit-transform: translateX(-98%) translateY(-25%) rotate(45deg);
+                                transform: translateX(-98%) translateY(-25%) rotate(45deg);
+                            }
+
+                            .btn:hover:after {
+                                -webkit-transform: translateX(-9%) translateY(-25%) rotate(45deg);
+                                transform: translateX(-9%) translateY(-25%) rotate(45deg);
+                            }
+
+                            .link {
+                                font-size: 20px;
+                                margin-top: 30px;
+                            }
+
+                            .link a {
+                                color: #000;
+                                font-size: 25px;
+                            }
+                        </style>
+                    </button>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- ======== -->
+    <main class="heroPage">
+        <div class="left-area">
+            <div class="time-date">
+                <h1 class="show-time">01:56 PM</h1>
+                <p class="show-day">Monday</p>
+                <p class="show-date">November 15, 2021</p>
+            </div>
+            <div class="previous_meeting">
+                <h2>Today's Events</h2>
+                <div class="details-main">
+                  <div class="more-details">
+                      <div class="details-text">
+                          <h5>09:00 AM - 10:00 AM</h5>
+                          <a href="#"> working session</a>
+                          <p>Meeting ID:831 4935</p>
+                      </div>
+                      <a href="#">Link</a>
+                  </div>
+                  <div class="details-buttons">
+                      <button class="start-btn">Start</button>
+                      <button>Edit</button>
+                      <button>Remove</button>
+                  </div>
+                </div>
+                <div class="details-main">
+                  <div class="more-details">
+                      <div class="details-text">
+                          <h5>11:00 AM - 11:45 AM</h5>
+                          <a href="#"> sprint week 3</a>
+                          <p>Meeting ID:976 5732</p>
+                      </div>
+                      <a href="#">Link</a>
+                  </div>
+                  <div class="details-buttons">
+                      <button class="start-btn">Start</button>
+                      <button>Edit</button>
+                      <button>Remove</button>
+                  </div>
+                </div>
+            </div>
+            <!-- Calendar -->
+            <div class="calender_container">
+                <div class="calendar">
+                  <div class="month">
+                    <i class="bi bi-arrow-left-circle prev"></i>
+                    <div class="date">
+                      <h1></h1>
+                      <p></p>
+                    </div>
+                    <i class="bi bi-arrow-right-circle next"></i>
+                  </div>
+                  <div class="weekdays">
+                    <div>Sun</div>
+                    <div>Mon</div>
+                    <div>Tue</div>
+                    <div>Wed</div>
+                    <div>Thu</div>
+                    <div>Fri</div>
+                    <div>Sat</div>
+                  </div>
+                  <div class="days"></div>
+                </div>
+              </div>
+        </div>
+        <div class="right-area">
+            <h1>Schedule a Meeting</h1>
+            <div class="section-1">
+                <h3>Meeting Type</h3>
+                <div class="meeting-lables">
+                    <label class="type-container">Investor Meeting
+                        <input type="checkbox" checked="checked" name="radio">
+                        <span class="checkmark"></span>
+                      </label>
+                      <label class="type-container">Interview
+                        <input type="checkbox" name="radio">
+                        <span class="checkmark"></span>
+                      </label>
+                      <label class="type-container">Business Meeting
+                        <input type="checkbox" name="radio">
+                        <span class="checkmark"></span>
+                      </label>
+                      <label class="type-container">Other
+                        <input type="checkbox" name="radio">
+                        <span class="checkmark"></span>
+                      </label>
+                </div>
+            </div>
+            <hr>
+            <div class="section-2">
+                <label class="subject">Subject
+                    <input type="text" class="subject" placeholder="Sync Up">
+                </label>
+                <label class="date-time">Date & Time
+                    <input type="date">
+                    <select name="industry" id="industry">                   
+                        <option value="industry">00:01</option>
+                        <option value="industry">00:02</option>
+                        <option value="industry">00:03</option>
+                        <option value="industry">00:04</option>
+                        <option value="industry">00:05</option>
+                        <option value="industry">00:06</option>
+                        <option value="industry">00:07</option>
+                        <option value="industry">00:08</option>
+                        <option value="industry">00:09</option>
+                        <option value="industry">00:10</option>
+                        <option value="industry">00:11</option>
+                        <option value="industry">00:12</option>
+                    </select>
+                    <select name="industry" id="industry">
+                        <option value="industry">AM</option>
+                        <option value="industry">PM</option>
+                    </select>
+                </label>
+                <label class="time-zone">Time Zone
+                    <select name="industry" id="industry">                   
+                        <option value="industry">GMT London</option>
+                        <option value="industry"></option>
+                        <option value="industry"></option>
+                        </select>
+                </label>
+                <div class="event">
+                    <h5>Recurring Event</h5>
+                <label class="type-container">Yes
+                    <input type="checkbox" name="radio">
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="type-container">No
+                    <input type="checkbox" name="radio">
+                    <span class="checkmark"></span>
+                  </label>
+                  </div>
+            </div>
+            <hr>
+            <div class="section-3">
+                <div class="event">
+                    <h5>Meeting ID</h5>
+                 <div class="meeting-id">   
+                <label class="type-container">Use Personal Profile ID
+                    <input type="checkbox" name="radio">
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="type-container">Use Company Profile ID
+                    <input type="checkbox" name="radio">
+                    <span class="checkmark"></span>
+                  </label>
+                  </div>
+                  </div>
+            </div>
+            <hr>
+            <div class="section-4">
+                <h3>Video</h1>
+                    <div class="event">
+                        <h5>Host</h5>
+                    <label class="type-container">On
+                        <input type="checkbox" name="radio">
+                        <span class="checkmark"></span>
+                      </label>
+                      <label class="type-container">Off
+                        <input type="checkbox" name="radio">
+                        <span class="checkmark"></span>
+                      </label>
+                      </div>
+                      <div class="event">
+                        <h5>Participants</h5>
+                    <label class="type-container">On
+                        <input type="checkbox" name="radio">
+                        <span class="checkmark"></span>
+                      </label>
+                      <label class="type-container">Off
+                        <input type="checkbox" name="radio">
+                        <span class="checkmark"></span>
+                      </label>
+                      </div>
+                      <div class="event">
+                        <h5>Live chat</h5>
+                    <label class="type-container">On
+                        <input type="checkbox" name="radio">
+                        <span class="checkmark"></span>
+                      </label>
+                      <label class="type-container">Off
+                        <input type="checkbox" name="radio">
+                        <span class="checkmark"></span>
+                      </label>
+                      </div>
+
+            </div>
+            <hr>
+            <div class="section-5">
+                <h3>Security</h3>
+                <div class="passcode">
+                    <label class="type-container">Passcode
+                        <input type="checkbox" name="radio">
+                        <span class="checkmark"></span>
+                      </label>
+                      <input type="text" class="chose_code">
+                </div>
+                <p>Only users who have the invite link and passcode can join the event</p>
+                <label class="type-container">Waiting Room
+                    <input type="checkbox" name="radio">
+                    <span class="checkmark"></span>
+                  </label>
+                  <p>Only users admitted by the host can join the event</p>
+            </div>
+            <hr>
+            <div class="section-6">
+                <h5>Add to Calendar</h5>
+                <button class="google-calendar"><img src="google-calendar-icon-png.png"> Google Calendar</button>
+            </div>
+            <hr>
+            <div class="section-7">
+                <h5>Advanced Options</h5>
+                <div class="advanced-options">
+                    <label class="type-container">Allow participants to join any time
+                        <input type="checkbox" name="radio">
+                        <span class="checkmark"></span>
+                      </label>
+                      <label class="type-container">Mute participants upon entry
+                        <input type="checkbox" name="radio">
+                        <span class="checkmark"></span>
+                      </label>
+                      <label class="type-container">Automatically record meeting
+                        <input type="checkbox" name="radio">
+                        <span class="checkmark"></span>
+                      </label>
+                </div>
+            </div>
+            <div class="meetingButtons">
+                <button onclick="toggle()" type="submit" id="hostMeeting">Save</button>
+                <button type="submit" id="scheduleMeeting">Cancel</button>
+            </div>
+        </div>
+    </main>
+    <!-- Footer -->
+    <footer-component></footer-component>
+    <script src="pageShift.js"></script>
+    <script src="script.js"></script>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+</body>
+</html>

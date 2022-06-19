@@ -1,0 +1,346 @@
+body {
+  font-family: Lato, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 17px;
+  letter-spacing: 0.05em;
+  background-color: aliceblue;
+}
+
+nav {
+  min-height: 110px;
+  background-color: #2b89ea;
+  display: flex;
+  align-items: center;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.2));
+}
+
+.nav_container {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.toggler {
+  color: white;
+  font-size: 50px;
+  cursor: pointer;
+  margin-left: 20px;
+}
+
+.toggler:hover {
+  color: #d6a364;
+  transition: 0.3s ease-out;
+}
+
+/* Side Nav */
+.side_nav {
+  display: none;
+  width: 100%;
+}
+
+.side_nav ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.side_nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  line-height: 40px;
+  transition: 0.3s ease-out;
+}
+
+.side_nav ul li a:hover {
+  color: #d6a364;
+}
+
+@media screen and (min-width: 992px) {
+  .navbar {
+    flex-wrap: nowrap;
+  }
+
+  .nav_container {
+    flex-direction: row;
+    /* flex-wrap: nowrap; */
+  }
+
+  .toggler {
+    display: none;
+  }
+
+  .side_nav {
+    display: block !important;
+    position: relative;
+    width: auto;
+    /* float: right; */
+    padding: 5px 0;
+  }
+
+  .side_nav ul {
+    float: left;
+    flex-direction: row;
+  }
+
+  .side_nav ul li {
+    display: inline-block;
+    padding-right: 20px;
+  }
+}
+
+/* Hero Section */
+
+.heroSection {
+  height: 606px;
+  background: linear-gradient(
+    90deg,
+    #0c63e7 25.57%,
+    rgba(12, 99, 231, 0) 77.14%
+  );
+}
+
+.heroContainer {
+  color: white;
+  display: flex;
+}
+
+.heroSection_Left {
+  margin-top: 30px;
+}
+
+.heroSection_Left > * {
+  margin-top: 30px;
+}
+
+.heroSection_Left p {
+  font-size: 26px;
+  font-weight: 300;
+}
+
+.heroSection_Left a button {
+  color: white;
+  background-color: #4cc2ec;
+  width: 256px;
+  height: 45px;
+  border: none;
+  border-radius: 50px;
+  transition: 0.2s ease-out;
+  margin-top: 30px;
+}
+
+.heroSection_Left a button:hover {
+  background-color: #d6a364;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.2));
+}
+
+.heroSection_Right img:nth-child(2) {
+  position: relative;
+  top: -125px;
+  left: -50px;
+}
+
+.heroSection_Right img:last-child {
+  position: relative;
+  top: -300px;
+  left: -300px;
+}
+
+.heroSection_Right img {
+  -webkit-transition: all 200ms ease-in-out;
+  -webkit-transform: scale(1);
+  -ms-transition: all 200ms ease-in-out;
+  -ms-transform: scale(1);
+  -moz-transition: all 200ms ease-in-out;
+  -moz-transform: scale(1);
+  transition: all 200ms ease-in-out;
+  transform: scale(1);
+}
+
+.heroSection_Right img:hover {
+  position: relative;
+  z-index: 2;
+  -webkit-transition: all 200ms ease-in-out;
+  -webkit-transform: scale(1.1);
+  -ms-transition: all 200ms ease-in-out;
+  -ms-transform: scale(1.1);
+  -moz-transition: all 200ms ease-in-out;
+  -moz-transform: scale(1.1);
+  transition: all 200ms ease-in-out;
+  transform: scale(1.1);
+}
+
+/* Events Section */
+
+.eventsSection {
+  display: flex;
+  align-items: center;
+  /* background-color: #dbecff; */
+  height: 600px;
+  padding-bottom: 30px;
+  background: url("../../assets/img/Vector-66.png") no-repeat;
+  background-position: 90% 80%;
+}
+
+.eventsContainer {
+  position: relative;
+  top: 75px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.eventsSection_Left {
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.2));
+}
+
+.eventsSection_Right {
+  height: 355px;
+  background-color: #0c63e7;
+  width: 722px;
+  border-radius: 20px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.2));
+}
+
+.eventsSection_RightTop {
+  height: 210px;
+  width: 100%;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.eventsSection_RightTop h1,
+.eventsSection_RightBottom h3 {
+  font-weight: 300;
+}
+
+.eventsSection_RightBottom {
+  position: absolute;
+  top: 210px;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  color: white;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+/* Conference Section */
+
+.conferenceSection {
+  width: 100%;
+  height: 650px;
+  background: url("../../assets/img/LinearLines.png") no-repeat;
+  background-color: white;
+  background-size: cover;
+  padding-top: 70px;
+}
+
+.conferenceContainer {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.conferenceSection_Left {
+  width: 30%;
+  /* border: hotpink solid; */
+}
+
+.conferenceSection_Left #cr-line {
+  width: 334px;
+  height: 4px;
+  background-color: #4cc2ec;
+  margin-top: 25px;
+  margin-bottom: 45px;
+}
+
+.conferenceSection_Left button {
+  color: white;
+  background-color: #4cc2ec;
+  width: 256px;
+  height: 45px;
+  border: none;
+  border-radius: 50px;
+  transition: 0.2s ease-out;
+  margin-top: 60px;
+}
+
+.conferenceSection_Left button:hover {
+  background-color: #d6a364;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.2));
+}
+
+.conferenceSection_Right {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.conferenceCard {
+  height: 212px;
+  width: 182px;
+  background-color: white;
+  border-radius: 20px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.2));
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 30px;
+  -webkit-transition: all 200ms ease-in-out;
+  -webkit-transform: scale(1);
+  -ms-transition: all 200ms ease-in-out;
+  -ms-transform: scale(1);
+  -moz-transition: all 200ms ease-in-out;
+  -moz-transform: scale(1);
+  transition: all 200ms ease-in-out;
+  transform: scale(1);
+}
+
+.conferenceCard:hover {
+  background-color: #0c63e7;
+  border: white solid 10px;
+  color: white;
+  box-shadow: 0px 0px 10px rgba(25, 130, 172, 0.231);
+  z-index: 2;
+  -webkit-transition: all 200ms ease-in-out;
+  -webkit-transform: scale(1.1);
+  -ms-transition: all 200ms ease-in-out;
+  -ms-transform: scale(1.1);
+  -moz-transition: all 200ms ease-in-out;
+  -moz-transform: scale(1.1);
+  transition: all 200ms ease-in-out;
+  transform: scale(1.1);
+}
+
+.conferenceCard img {
+  padding-bottom: 15px;
+}
+
+.conferenceCard h4 {
+  font-weight: 300;
+}
+
+.conferenceCard:first-child,
+.conferenceCard:nth-child(3) {
+  position: relative;
+  bottom: -80px;
+}
+
+.conferenceCard:nth-child(2),
+.conferenceCard:last-child {
+  position: relative;
+  top: -80px;
+}

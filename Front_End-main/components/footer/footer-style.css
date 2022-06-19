@@ -1,0 +1,112 @@
+/* Footer */
+
+footer {
+    padding-top: 20px;
+  }
+  
+  .footer_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 0;
+  }
+  
+  .footer_aboutSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .footer_aboutSection img {
+    margin-bottom: 20px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.2));
+  }
+  
+  .footer_aboutSection p {
+    padding: 0 40px;
+    margin-bottom: 20px;
+  }
+  
+  .footer_aboutSection h4 {
+    color: #32baea;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.2));
+  }
+  
+  .footer_aboutSection .hero_search {
+    margin-top: 5px;
+  }
+  
+  .footer_socialLinks {
+    margin-top: 20px;
+    width: 150px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  .footer_socialLinks a img {
+    width: 40px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.2));
+  }
+  
+  .footer_socialLinks a img:hover {
+    transform: scale(1.15);
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .footer_infoSection {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 350px;
+  }
+  
+  .footer_infoSection h5 {
+    color: #32baea;
+  }
+  
+  .footer_infoSection a {
+    text-decoration: none;
+    color: #000000;
+  }
+  
+  .footer_infoSection a:hover {
+    transition: 0.2s ease-out;
+    color: #d6a364;
+  }
+  
+  .follow_us {
+    display: none;
+  }
+  
+  .footer_termsConditions {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .footer_termsConditions a {
+    text-decoration: none;
+  }
+  
+  .footer_termsConditions a:hover {
+    transition: 0.2s ease-out;
+    color: #d6a364;
+  }
+  
+  @media screen and (min-width: 768px) {
+    .footer_socialLinks {
+      display: none;
+    }
+  
+    .footer_infoSection {
+      width: 550px;
+      margin-top: 40px;
+    }
+  
+    .follow_us {
+      display: unset;
+    }
+  }

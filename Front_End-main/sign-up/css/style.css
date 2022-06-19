@@ -1,0 +1,285 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  /* font-size: 62.5%; */
+}
+
+body {
+  height: 100vh;
+  /* font-size: 1.8rem; */
+  /* background-image: url("../images/background/Background.svg"); */
+  background-size: 200rem;
+  background-position: 100% 104%;
+  font-family: "Lato", sans-serif;
+}
+/* -----Header----- */
+nav {
+  min-height: 110px;
+  background-color: #2b89ea;
+  display: flex;
+  align-items: center;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.2));
+}
+
+.nav_container {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.toggler {
+  color: white;
+  font-size: 50px;
+  cursor: pointer;
+  margin-left: 20px;
+}
+
+.toggler:hover {
+  color: #d6a364;
+  transition: 0.3s ease-out;
+}
+
+/* Side Nav */
+.side_nav {
+  display: none;
+  width: 100%;
+}
+
+.side_nav ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.side_nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  line-height: 40px;
+  transition: 0.3s ease-out;
+}
+
+.side_nav ul li a:hover {
+  color: #d6a364;
+}
+
+@media screen and (min-width: 992px) {
+  .navbar{
+    flex-wrap: nowrap;
+  }
+
+  .nav_container {
+    flex-direction: row;
+    /* flex-wrap: nowrap; */
+  }
+
+  .toggler {
+    display: none;
+  }
+
+  .side_nav {
+    display: block !important;
+    position: relative;
+    width: auto;
+    /* float: right; */
+    padding: 5px 0;
+  }
+
+  .side_nav ul {
+    float: left;
+    flex-direction: row;
+  }
+
+  .side_nav ul li {
+    display: inline-block;
+    padding-right: 20px;
+  }
+}
+
+
+
+.main {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-card {
+  display: flex;
+  margin: 0 auto;
+  flex-direction: column;
+  width: 53%;
+  max-width: 1200px;
+  height: auto;
+  box-shadow: 0 0 20rem -5rem #2b89ea;
+  border-radius: 2rem;
+  background-color: white;
+}
+
+.main-logo {
+  margin: 2rem auto;
+  margin-top: 4rem;
+}
+
+.main-logo img {
+  height: 12rem;
+}
+
+.main-welcome {
+  display: flex;
+  justify-content: center;
+  font-size: 5rem;
+  margin-bottom: 9rem;
+}
+
+.profiles {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 5rem;
+  text-align: center;
+  color: #16163f;
+}
+
+.profiles img {
+  height: 15rem;
+  margin-bottom: 4rem;
+}
+
+.profiles h3 {
+  /* font-size: 4.2rem; */
+  font-weight: lighter;
+  margin-bottom: 1.8rem;
+  font-weight: 500;
+}
+
+.profiles h4 {
+  /* font-size: 3.2rem; */
+  font-weight: lighter;
+  margin-bottom: 2rem;
+  font-weight: 400;
+}
+
+.not-you {
+  margin: 3rem auto;
+  font-weight: 400;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.main-bottom {
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  width: 63%;
+}
+
+.create-new-profile {
+  display: flex;
+  margin-top: 3rem;
+  flex-direction: column;
+}
+
+.create-new-profile p {
+  margin-bottom: 1rem;
+  /* font-size: 3.5rem; */
+  font-weight: 200;
+  color: #777777;
+  letter-spacing: 0.2rem;
+}
+
+.create-new-profile input {
+  font-family: "Lato", sans-serif;
+  font-size: 1.5rem;
+  width: 20rem;
+  height: 3rem;
+  border: 1px solid #2b89ea;
+  border-radius: 1rem;
+}
+
+.sign-up {
+  font-family: "Lato", sans-serif;
+  font-weight: 100;
+  font-size: small;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.remember {
+  margin-top: 1rem;
+  line-height: 3rem;
+}
+
+.sign-up button {
+
+  width: 10rem;
+  height: 3rem;
+  font-size: 2rem;
+  color: white;
+  border: none;
+  border-radius: 0.7rem;
+  letter-spacing: 0.2rem;
+}
+
+.buttons {
+  display: flex;
+}
+
+/* footer {
+  font-family: "DM Sans", sans-serif;
+} */
+
+.top {
+  display: flex;
+  margin: 10rem auto;
+  width: 63%;
+  justify-content: space-between;
+}
+
+.logo-name {
+  display: flex;
+  margin-bottom: 1rem;
+}
+
+.login__button {
+  background-color: rgb(81, 179, 229);
+  margin-right: 15px;
+}
+
+.sign-up__button {
+  background-color: #cacaca;
+  margin-left: 15px;
+}
+
+.logo-name p {
+  margin: auto 1rem;
+}
+
+.mission-text {
+  width: 35rem;
+}
+
+li {
+  list-style-type: none;
+}
+
+.follow-us li {
+  text-align: center;
+}
+
+.about-format {
+  line-height: 5.3rem;
+}

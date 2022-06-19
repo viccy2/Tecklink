@@ -1,0 +1,28 @@
+
+@media screen and (max-width: 600px){
+  .main_grid{
+    display: flex;
+    flex-direction: column;
+  }
+  .friendsCard_Section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .friendsCard {
+    margin-top: 1rem;
+  }
+}
+@media screen and (max-width: 1000px){
+  .main_grid{
+    display: flex;
+    flex-direction: column;
+  }
+  .friendsCard_Section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+  }
+  .friendsCard {
+    margin-top: 1rem;
+  }
+}

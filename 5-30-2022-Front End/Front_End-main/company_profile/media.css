@@ -1,0 +1,133 @@
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (-o-min-device-pixel-ratio: 3/2),
+only screen and (min--moz-device-pixel-ratio: 1.5),
+only screen and (min-device-pixel-ratio: 1.5){
+    html,
+    body{
+        width: 100%;
+        overflow-x: hidden;
+    }
+}
+@media screen and (max-width: 600px){
+  #company-profile{
+    flex-direction: column;
+    display: flex;
+  }
+  .profile-main{
+    width: 100%;
+  }
+  .side-bar{
+    width: 100%;
+  }
+  .data-indicator ul{
+    display: flex !important; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+  }
+  .data-indicator ul li {
+    margin: 15px;
+  }
+   .company-about{
+    top: 500px;
+  }
+  .data-main-page{
+    height: 65vh;
+  }
+  #people-page,
+  #jobs-page,
+  #community-highlights-page,
+  #company-news-page{
+    top: 300px;
+    position: unset;
+  }
+  .latest-post-image img{
+    width: 250px;
+  }
+  .profile-image{
+    border: transparent;
+  }
+  .profile-image img{
+    width: 150px;
+  }
+  .fit{
+    width: 280px;
+    height: 180px;
+  }
+  .client-reaction img{
+    width: 30px;
+  }
+  .client-reaction p{
+    font-size: 15px;
+  }
+  .media-btn ul{
+    padding: 0;
+  }
+}
+
+@media screen and (min-width: 601px) and (max-width: 1000px){
+  #company-profile{
+    flex-direction: column;
+    display: flex;
+  }
+  .profile-main{
+    width: 100%;
+  }
+  .side-bar{
+    width: 100%;
+  }
+  .fit{
+    width: 180px;
+    height: 130px;
+  }
+  .latest-post-image img{
+    width: 100%;
+  }
+  .service-card_cn .service p{
+    font-size: 13px;
+    line-height: 15px;
+    padding: 15px;
+  }
+  .data-indicator ul li{
+    width: 130px;
+  }
+  .data-indicator ul li a{
+    font-size: 10px;
+  }
+  .service-card_jobs-ch .service p{
+     font-size: 13px;
+  }
+}
+@media screen and (min-width: 1001px) and (max-width: 1366px){
+  .profile-main{
+    width: fit-content;
+  }
+  .profile-image img{
+    width: 200px;
+  }
+  .profile-data{
+    width: 70%;
+  }
+  .latest-post-image img{
+    width: 100%;
+  }
+  .data-indicator ul li{
+    width: 150px;
+  }
+  .data-indicator ul li a{
+    font-size: 12px;
+  }
+  .fit{
+    width: 180px;
+    height: 130px;
+  }
+  .service-card_cn .service p{
+    font-size: 13px;
+    line-height: 15px;
+    padding: 15px;
+  }
+  .service-card_jobs-ch .service p{
+    font-size: 13px;
+ }
+}

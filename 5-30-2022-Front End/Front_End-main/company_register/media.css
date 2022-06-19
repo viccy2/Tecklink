@@ -1,0 +1,70 @@
+
+@media screen and (max-width:600px){
+    .main-page{
+        flex-direction: column;
+        padding: 0;
+    }
+    .sidebar{
+        width: 100%;
+        margin-bottom: 50px;
+    }
+    #input-field{
+        width: 100%;
+    }
+    #account-user_info{
+        margin: 0;
+    }
+    .action-buttons{
+        padding: 0;
+        flex-direction: column;
+    }
+    .action-buttons button {
+        padding: 20px;
+        font-size: 1.2em;
+    }
+    .columb-1{
+        width: 100%;
+    }
+    .main-bio-field{
+        margin: 0;
+    }
+    #company-bio_form{
+        padding: 1rem;
+    }
+    #logo-user_info, #training-video_info{
+        margin: 0;
+    }
+    .thumb-img-card{
+        width: 115%;
+        margin: 0;
+        padding: 0;
+    }
+}
+@media screen and (min-width: 601px) and (max-width: 1000px){
+    .main-page{
+        flex-direction: column;
+        padding: 0;
+    }
+    .sidebar{
+        width: 100%;
+        margin-bottom: 50px;
+    }
+    .profile-image {
+        background-size: cover;
+        height: 400px;
+    }
+    #input-field{
+        width: 100%;
+    }
+    #account-user_info,
+    .main-bio-field,
+    #logo-user_info, 
+    #training-video_info{
+        margin: 0;
+    }
+}
+@media screen and (min-width: 1001px) and (max-width: 1366px){
+    .action-buttons button {
+        padding: 15px;
+    }
+}

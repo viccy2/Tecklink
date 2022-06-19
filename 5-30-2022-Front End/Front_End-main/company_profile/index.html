@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Meta Description Tag -->
+    <meta name=“description” content=“TeckLink is an employment and business service available on web and mobile.
+        TeckLink can be used for career advancement, business, employment and more with the assistance of AI.”>
+    <!-- Meta Author -->
+    <meta name=“author” content=“TeckLink LLC”>
+    <!-- Title -->
+    <title>TeckLink | Company Profile</title>
+    <!-- =========================================================== -->
+    <!-- =========================================================== -->
+    <!-- RESET CSS -->
+    <link rel="stylesheet" href="../assets/reset_style.css">
+    <!-- STYLE CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="media.css">
+    <!-- BOOTSTRAP CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <!-- BOOTSTRAP ICONS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="../components/footer/footer.js"></script>
+  
+    <!--------swiper------->
+    <link
+    rel="stylesheet"
+    href="https://unpkg.com/swiper/swiper-bundle.min.css"
+  />
+      <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Anton&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar container-fluid">
+        <div class="container-sm nav_container">
+            <a href="../../index.html">
+                <img src="assets/img/TeckLink-Header-Logo.png" alt="TeckLink">
+            </a>
+            <div class="toggler">
+                <i class="bi bi-list"></i>
+            </div>
+            <!-- Side Nav -->
+            <div class="side_nav">
+                <ul>
+                    <li><a href="#">Workshop</a></li>
+                    <li><a href="#">TeckMeet</a></li>
+                    <li><a href="#">Jobs</a></li>
+                    <li><a href="#">TeckConnect</a></li>
+                    <li><a href="#">VoiceCast</a></li>
+                    <li><a href="#">Messenger</a></li>
+                    <button class="btn"><a href="../../sign-up/index.html"><span>Sign In</span></a>
+                        <style>
+                            .button_container {
+                                position: relative;
+                                left: 0;
+                                right: 0;
+                                top: 30%;
+                            }
+
+                            .btn {
+                                border: none;
+                                display: flex;
+                                text-align: center;
+                                cursor: pointer;
+                                text-transform: uppercase;
+                                outline: none;
+                                overflow: hidden;
+                                position: relative;
+                                color: #fff;
+                                font-weight: 700;
+                                font-size: 15px;
+                                background-color: rgb(0, 53, 123);
+                                padding: 5px 25px;
+                                margin-top: 10px;
+                                box-shadow: 0 2px 2px rgba(0, 0, 0, 0.20);
+                            }
+
+                            .btn a {
+                                color: #fff;
+                                text-decoration: none;
+
+                            }
+
+                            .btn span {
+                                position: relative;
+                                z-index: 1;
+                            }
+
+                            .btn:after {
+                                content: "";
+                                position: absolute;
+                                left: 0;
+                                top: 0;
+                                height: 490%;
+                                width: 140%;
+                                background: #2d9feb;
+                                -webkit-transition: all .5s ease-in-out;
+                                transition: all .5s ease-in-out;
+                                -webkit-transform: translateX(-98%) translateY(-25%) rotate(45deg);
+                                transform: translateX(-98%) translateY(-25%) rotate(45deg);
+                            }
+
+                            .btn:hover:after {
+                                -webkit-transform: translateX(-9%) translateY(-25%) rotate(45deg);
+                                transform: translateX(-9%) translateY(-25%) rotate(45deg);
+                            }
+
+                            .link {
+                                font-size: 20px;
+                                margin-top: 30px;
+                            }
+
+                            .link a {
+                                color: #000;
+                                font-size: 25px;
+                            }
+                        </style>
+                    </button>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- ======== -->
+    <main class="main">
+    <!-- Search Bar -->
+            <div class="search">
+                <i class="search01"></i>
+                <input type="search" placeholder="Search Job Openings">
+                <button>Search</button>
+            </div>
+    <section id="company-profile">
+     <!----Profile Info------->       
+        <div class="profile-main">
+            <div class="side-bar">
+                <div class="profile-image">
+                    <img src="../assets/img/TeckLink_Center_Icon.png">
+                </div>
+                <div class="company-NL">
+                    <h1>Company Name</h1>
+                    <h2>Location</h2>
+                </div>
+                <div class="visit-website">
+                    <h1>Visit website's</h1>
+                    <div class="website-list">
+                        <div class="bar"></div>
+                    </div>
+                </div>
+                <div class="affiliate-pages">
+                    <h1>Affiliated pages</h1>
+                    <div class="affiliate-pages_list">
+                        <ul>
+                            <li class="affiliate-page_info">
+                                <div class="company-main-info">
+                                    <img src="../assets/img/apple.png">
+                                <div class="company-details">
+                                    <h1>APPLE</h1>
+                                    <p>Product</p>
+                                    <p>330 million followers</p>
+                                </div>
+                                </div>
+                                <button class="follow">Follow</button>
+                            </li>
+                            <hr>
+
+                            <li class="affiliate-page_info">
+                                <div class="company-main-info">
+                                    <img src="../assets/img/amazon.png">
+                                <div class="company-details">
+                                    <h1>AMAZON</h1>
+                                    <p>INTERNET</p>
+                                    <p>330 million followers</p>
+                                </div>
+                                </div>
+                                <button class="follow">Follow</button>
+                            </li>
+                            <hr>
+                            <li class="affiliate-page_info">
+                                <div class="company-main-info">
+                                    <img src="../assets/img/google.png">
+                                <div class="company-details">
+                                    <h1>GOOGLE</h1>
+                                    <p>INTERNET</p>
+                                    <p>330 million followers</p>
+                                </div>
+                                </div>
+                                <button class="follow">Follow</button>
+                            </li>
+                            <hr>
+                            <li class="affiliate-page_info">
+                                <div class="company-main-info">
+                                    <img src="../assets/img/google.png">
+                                <div class="company-details">
+                                    <h1>GOOGLE</h1>
+                                    <p>INTERNET</p>
+                                    <p>330 million followers</p>
+                                </div>
+                                </div>
+                                <button class="follow">Follow</button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+<!------Profile Data---->
+        <div class="profile-data" id="element-slide">
+            <div class="main-head"><h1> Profile</h1></div>
+
+        <div class="element-slide"> 
+                <div class="data-indicator">
+                <ul>
+                    <li class="data-list active">
+                        <a href="#element-slide" data-switcher data-tab="1">
+                            <span class="text">Overview</span>
+                        </a>
+                    </li>
+                    <li class="data-list">
+                        <a href="#element-slide" data-switcher data-tab="2">
+                            <span class="text">People</span>
+                        </a>
+                    </li>
+                    <li class="data-list">
+                        <a href="#element-slide" data-switcher data-tab="3">
+                            <span class="text">Jobs</span>
+                        </a>
+                    </li>
+                    <li class="data-list">
+                        <a href="#element-slide" data-switcher data-tab="4">
+                            <span class="text">Community Highlights</span>
+                        </a>
+                    </li>
+                    <li class="data-list">
+                        <a href="#element-slide" add data-switcher data-tab="5"><!----add data-switcher data-tab="5"-->
+                            <span class="text">Company News</span>
+                        </a>
+                    </li>
+                    
+                </ul>
+                </div>
+
+           <div class="data-main-page">
+                    <div id="company-bio" class="data-page active" data-page="1">
+                        <h2>About/Bio</h2>
+                        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+                    </div>  
+
+                <!------ Swiper ------->
+                <div id="people-page" class="data-page" data-page="2">
+                        <div class="swiper mySwiper" id="responsive_swiper">
+                            <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="service-card ">
+                                    <img src="../assets/img/Ian.png">
+                                    <h1>Name</h1>
+                                    <div class="service">
+                                        <p>Title</p>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="service-card ">
+                                    <img src="../assets/img/Ian.png">
+                                    <h1>Name</h1>
+                                    <div class="service">
+                                        <p>Title</p>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="service-card ">
+                                    <img src="../assets/img/Ian.png">
+                                    <h1>Name</h1>
+                                    <div class="service">
+                                        <p>Title</p>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide"><div class="service-card ">
+                                <img src="../assets/img/Ian.png">
+                                <h1>Name</h1>
+                                <div class="service">
+                                    <p>Title</p>
+                                    
+                                </div>
+                            </div></div>
+                            <div class="swiper-slide">
+                                <div class="service-card ">
+                                    <img src="../assets/img/Ian.png">
+                                    <h1>Name</h1>
+                                    <div class="service">
+                                        <p>Title</p>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="service-card ">
+                                    <img src="../assets/img/Ian.png">
+                                    <h1>Name</h1>
+                                    <div class="service">
+                                        <p>Title </p>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                </div><!----end of people page----->
+
+                <div id="jobs-page" class="data-page" data-page="3">
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="service-card_jobs-ch ">
+                                <img src="../assets/img/Ian.png">
+                                <div class="service">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="service-card_jobs-ch ">
+                                <img src="../assets/img/Ian.png">
+                                <div class="service">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="service-card_jobs-ch ">
+                            <img src="../assets/img/Ian.png">
+                            <div class="service">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+                                
+                            </div>
+                        </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="service-card_jobs-ch ">
+                                <img src="../assets/img/Ian.png">
+                                <div class="service">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="service-card_jobs-ch ">
+                                <img src="../assets/img/Ian.png">
+                                <div class="service">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="service-card_jobs-ch ">
+                                <img src="../assets/img/Ian.png">
+                                <div class="service">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." </p>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+            </div><!-----end of jobs page----->
+            <div id="community-highlights-page" class="data-page" data-page="4">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="service-card_jobs-ch ">
+                            <img src="../assets/img/Jon.png">
+                            <div class="service">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="service-card_jobs-ch ">
+                            <img src="../assets/img/Jon.png">
+                            <div class="service">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="service-card_jobs-ch ">
+                        <img src="../assets/img/Jon.png">
+                        <div class="service">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+                            
+                        </div>
+                    </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="service-card_jobs-ch ">
+                            <img src="../assets/img/Jon.png">
+                            <div class="service">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="service-card_jobs-ch ">
+                            <img src="../assets/img/Jon.png">
+                            <div class="service">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="service-card_jobs-ch ">
+                            <img src="../assets/img/Jon.png">
+                            <div class="service">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." </p>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                </div><!-----end of community page----->
+                <div id="company-news-page" class="data-page" data-page="5">
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="service-card_cn ">
+                                <h3>Topics</h3>
+                                <div class="fit"></div>
+                                <div class="service">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="service-card_cn ">
+                                <h3>Topics</h3>
+                                <div class="fit"></div>
+                                <div class="service">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="service-card_cn ">
+                                <h3>Topics</h3>
+                            <div class="fit"></div>
+                            <div class="service">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+                                
+                            </div>
+                        </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="service-card_cn ">
+                                <h3>Topics</h3>
+                                <div class="fit"></div>
+                                <div class="service">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="service-card_cn ">
+                                <h3>Topics</h3>
+                                <div class="fit"></div>
+                                <div class="service">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="service-card_cn ">
+                                <h3>Topics</h3>
+                                <div class="fit"></div>
+                                <div class="service">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." </p>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    </div><!-----end of jobs page----->
+           </div>
+        </div><!--end of element slide-->
+
+
+            <div class="company-about">
+                <h2>About/Bio</h2>
+                <div class="additional-bio">
+                    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                         Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+                    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                         Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+
+                </div>
+            </div> 
+            <div class="latest-posts">
+                <h2>Latest Posts</h2>
+                <div class="latest-post-info">
+                    <div class="latest-post-data">
+                        <div class="latest-post-name">
+                        <p>First/</p>
+                        <p>Last Name</p>
+                        </div>
+                        <p>Date and Time</p>
+                    </div>
+                    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                    <div class="latest-post-image">
+                        <img src="../assets/img/placeholder.jpg">
+                        <p>Title</p>
+                        <div class="topic">
+                            <strong>Topic</strong>
+                            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi</p>
+                        </div>
+                    </div>
+                </div>
+               <div class="social-media-info">
+                   <div class="client-media-feedback">
+                    <div class="client-reaction">
+                        <img src="../assets/img/Reaction.png">
+                        <img src="../assets/img/Reaction-1.png">
+                        <img src="../assets/img/Reaction-2.png">
+                    </div>
+                    <div class="client-reaction">
+                        <p>0 COMMENTS</p>
+                        <p>0 SHARES</p>
+                    </div>
+                   </div>
+                   <div class="media-btn">
+                    <ul>
+                        <li>
+                            <i class="bi bi-hand-thumbs-up"></i>
+                            <p>Like</p>
+                        </li>
+                        <li>
+                            <i class="bi bi-chat-square"></i>
+                            <p>Comment</p>
+                        </li>
+                        <li>
+                            <i class="bi bi-send"></i>
+                            <p>Share</p>
+                        </li>
+                    </ul>
+
+                   </div>
+               </div>
+            </div>
+            <textarea placeholder="Write Your Comment"></textarea>  
+        </div>
+        
+    </section>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d226450.26897880214!2d44.55662656520347!3d41.778067741237976!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40446dbd37d92a3f%3A0xef0f7cf49a40124f!2sGeorgia!5e0!3m2!1sen!2sbg!4v1651186770117!5m2!1sen!2sbg" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </main>
+<!-- Footer -->
+<footer-component></footer-component>
+    <script src="script.js"></script>
+    <!-- Page Script -->
+    <script src="../assets/js/landing.js"></script>
+    <script src="./components/navbar/openNav.js"></script>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+</body>
+</html>

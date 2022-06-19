@@ -1,0 +1,50 @@
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (-o-min-device-pixel-ratio: 3/2),
+only screen and (min--moz-device-pixel-ratio: 1.5),
+only screen and (min-device-pixel-ratio: 1.5){
+    html,
+    body{
+        width: 100%;
+        overflow-x: hidden;
+    }
+}
+@media screen and (max-width:600px){
+.heroPage{
+    display: flex;
+    flex-direction: column;
+}
+.meetingButtons {
+flex-direction: column;
+}
+.section-5 p {
+    font-size: 20px;
+}
+.passcode{
+    flex-direction: column;
+}
+.time-date,
+.calendar{
+    width: inherit;
+}
+}
+
+@media screen and (max-width:900px){
+    .heroPage{
+        display: flex;
+        flex-direction: column;
+    }
+    .meetingButtons button {
+        width: 200px;
+        font-size: 30px;
+     
+    }
+    .left-area {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+    .previous_meeting {
+        width: 90%;
+    }
+}

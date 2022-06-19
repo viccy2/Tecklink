@@ -1,0 +1,263 @@
+body {
+  font-family: Lato, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 17px;
+  letter-spacing: 0.05em;
+  background-color: aliceblue;
+}
+
+nav {
+  min-height: 110px;
+  background-color: #2b89ea;
+  display: flex;
+  align-items: center;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.2));
+}
+
+.nav_container {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.toggler {
+  color: white;
+  font-size: 50px;
+  cursor: pointer;
+  margin-left: 20px;
+}
+
+.toggler:hover {
+  color: #d6a364;
+  transition: 0.3s ease-out;
+}
+
+/* Side Nav */
+.side_nav {
+  display: none;
+  width: 100%;
+}
+
+.side_nav ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.side_nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 17px;
+  line-height: 40px;
+  transition: 0.3s ease-out;
+}
+
+.side_nav ul li a:hover {
+  color: #d6a364;
+}
+
+@media screen and (min-width: 992px) {
+  .navbar {
+    flex-wrap: nowrap;
+  }
+
+  .nav_container {
+    flex-direction: row;
+    /* flex-wrap: nowrap; */
+  }
+
+  .toggler {
+    display: none;
+  }
+
+  .side_nav {
+    display: block !important;
+    position: relative;
+    width: auto;
+    /* float: right; */
+    padding: 5px 0;
+  }
+
+  .side_nav ul {
+    float: left;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .side_nav ul li {
+    display: inline-block;
+    padding-right: 20px;
+  }
+}
+
+/* Main */
+
+main {
+  background-image: linear-gradient(#dbecff 30%, white 70%);
+  width: 100%;
+}
+
+/* Search Box */
+.searchBox {
+  width: 100%;
+  padding: 30px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.searchBox__container {
+  width: 100%;
+  max-width: 450px;
+  height: 50px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  border-radius: 50px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.2));
+  margin-bottom: 20px;
+  padding: 0 10px;
+  padding-right: 15px;
+}
+
+.searchBox__container i {
+  font-size: 22px;
+  color: #2b89ea;
+}
+
+.searchBox__container input {
+  height: 46px;
+  margin-left: 5px;
+  padding-left: 5px;
+  display: flex;
+  flex-grow: 1;
+  border: none;
+}
+
+@media screen and (min-width: 992px){
+  .searchBox{
+    flex-direction: row;
+  }
+
+  .searchBox__container:first-child{
+    margin-right: 20px;
+  }
+}
+
+/* Opportunities Box */
+
+.opportunitiesBox{
+  width: 100%;
+  background-color: white;
+  border: none;
+  border-radius: 25px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.2));
+  padding: 20px 5px;
+  margin-bottom: 30px;
+}
+
+.opportunitiesBox h4{
+  font-weight: 700;
+}
+
+.companyCard__grid{
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.companyCard  {
+  width: 100%;
+  max-width: 380px;
+  margin: 20px 0;
+  padding: 20px 40px;
+  background-image: linear-gradient(#dbecff, white);
+  border-radius: 25px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.2));
+  justify-self: center;
+}
+
+.companyCard__img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+}
+
+.companyCard__details-title{
+  margin-bottom: 15px;
+}
+
+.companyCard__details-title > *{
+  margin-bottom: 0;
+}
+
+.companyCard__details-title h6{
+  font-size: 18px;
+}
+
+.companyCard__details-detail{
+  height: 180px;
+}
+
+.companyCard__details-detail p{
+  margin-bottom: 0;
+}
+
+.companyCard__details-button{
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.companyCard__details-button button{
+  width: 200px;
+  height: 55px;
+  color: #2b89ea;
+  border: #2b89ea solid;
+  border-radius: 10px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.companyCard__details-button button:hover{
+  color: #d6a364;
+  border: #d6a364 solid;
+  transition: 0.3s ease-out;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.2));
+}
+
+.opportunitiesBox__button{
+  display: flex;
+  margin-top: 15px;
+  justify-content: center;
+}
+
+.opportunitiesBox__button h5{
+  color: #2b89ea;
+  border-bottom: #2b89ea solid 2px;
+}
+
+.opportunitiesBox__button h5:hover{
+  color: #d6a364;
+  border-bottom: #d6a364 solid 2px;
+  transition: 0.3s ease-out;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.2));
+}
+
+@media screen and (min-width: 767px){
+  .companyCard__grid{
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 10px;
+  }
+}
+
+@media screen and (min-width: 1199px){
+  .companyCard__grid{
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

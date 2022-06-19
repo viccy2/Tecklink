@@ -1,0 +1,9 @@
+@media screen and (max-width: 1200px){
+    .heroSection_Right img{
+        width: 90%;
+        
+    }
+    .heroSection_Right img:last-child{
+        width: 65%;
+    }
+}
